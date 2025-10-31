@@ -7,6 +7,15 @@ This directory serves as a knowledge base *about* Flipper Zero application devel
 
 No actual Flipper Zero application development takes place directly within this directory; it functions as a repository for instructional context.
 
+## Primary Resources
+
+This project also includes a `resources.md` file that contains a list of primary resources for Flipper Zero development. These resources should be the first point of reference for any research. The resources include:
+
+-   **User Interface:** A guide to the Flipper Zero's UI components.
+-   **Message Queue:** A tutorial on using message queues for event-driven programming.
+-   **uFBT:** The official documentation for the micro Flipper Build Tool.
+
+
 ## Building and Running
 
 The guides outline the key commands for setting up the development environment, building, and deploying Flipper Zero applications using `uFBT`.
