@@ -22,6 +22,16 @@ Explains how to create an application that draws text directly on the Flipper's 
 4.  **[Deployment Guide](guides/deployment_guide.md)** 🚀  
 Covers the different ways to get your application onto your Flipper Zero.
 
+## 💻 The Code
+
+These are the Flipper Zero applications that the guides teach you how to build:
+
+*   **[`hello-flipper`](src/hello-flipper/)**  
+A minimal application that prints "Hello world" to the Flipper Zero's log.
+
+*   **[`hello-flipper-ui`](src/hello-flipper-ui/)**  
+A simple UI application that displays "Hello, Flipper!" on the device screen using a `ViewPort`.
+
 ## ✨ Additional Resources
 
 *   **[Primary Resources](guides/resources.md)** 🔗  
