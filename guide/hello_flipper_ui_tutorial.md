@@ -4,34 +4,13 @@
 
 In this guide, we will create a new Flipper Zero application named `hello_flipper_ui`. Unlike our previous "Hello World" example that only printed to the device's internal log, this application will display the text "Hello, Flipper!" directly on the Flipper Zero's monochrome screen. This will introduce you to the fundamental concepts of Flipper Zero's graphical user interface (GUI) development using a simple `ViewPort`.
 
-## Project Setup
+### Setup and Creation
 
-First, let's set up our new project.
+Before you begin, please follow the [Setup and Create Guide](setup_and_create_guide.md) to:
+1.  Set up your development environment.
+2.  Create a new application. For this guide, you can use `hello_flipper_ui` as your `APPID`.
 
-1.  **Navigate to Your Project Directory:**
-    Open your terminal (Command Prompt, PowerShell, or VS Code integrated terminal) and navigate to the directory where you want to create your Flipper Zero applications. For example:
-
-    ```bash
-    cd C:\FlipperProjects
-    ```
-
-2.  **Generate a New Application:**
-    Use the `ufbt create` command to generate the basic structure for our new application. We'll name its `APPID` `hello_flipper_ui`.
-
-    ```bash
-    ufbt create APPID=hello_flipper_ui
-    ```
-
-    This command will create the `application.fam` manifest file and the main source file, `hello_flipper_ui.c`, directly within your current directory.
-
-3.  **Set up VSCode Integration (Optional but Recommended):**
-    If you plan to use Visual Studio Code for development, run the following command from your current directory to generate VSCode configuration files:
-
-    ```bash
-    ufbt vscode_dist
-    ```
-
-    After running this, open VSCode, go to `File > Open Folder...`, and select your current directory (e.g., `C:\FlipperProjects`).
+After following the guide, you will have a folder containing a generated application. The rest of this tutorial will focus on modifying the code in `hello_flipper_ui.c`.
 
 ## Understanding Flipper Zero's GUI Basics: The `ViewPort` Approach
 

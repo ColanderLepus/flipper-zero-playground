@@ -29,3 +29,28 @@ Python is required to run the `uFBT` build tool.
     The "Add Python to PATH" option in the official installer usually handles this for you by adding both directories. However, if you install `ufbt` and get a "command not found" error, it's almost certainly because the `Scripts` folder is not in your `PATH`, and you will need to add it manually.
 
 Once you have completed these steps, your environment is ready.
+
+# Creating an Application
+
+Once your environment is set up, you can create a new Flipper Zero application.
+
+1.  **Open Your Project Folder in VS Code:**
+    Create a new folder for your project (e.g., `C:\FlipperProjects\my_new_app`) and open it in Visual Studio Code (`File > Open Folder...`).
+
+2.  **Generate a New Application:**
+    Open the integrated terminal in VS Code (`View > Terminal`). You should already be in your project's root directory. Use `ufbt create` to generate a new application template. Replace `<app_id>` with a unique identifier for your application.
+
+    ```bash
+    ufbt create APPID=<app_id>
+    ```
+
+    This command will create the application manifest (`application.fam`) and its main source file (`<app_id>.c`) directly within your current directory.
+
+3.  **Set up VSCode Integration:**
+    For a better development experience, you can integrate your project with Visual Studio Code. Run the following command from your application's root directory in the integrated terminal:
+
+    ```bash
+    ufbt vscode_dist
+    ```
+
+    This command will generate VSCode configuration files that allow you to build and debug your application directly from the IDE. You can then use the provided launch (Ctrl+Shift+B) and debugging (Ctrl+Shift+D) configurations.

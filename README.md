@@ -10,8 +10,8 @@ This repository contains both Flipper Zero applications and the guides that show
 
 The guides are designed to be read in order:
 
-1.  **[Environment Setup Guide](guide/environment_setup_guide.md)** 💻  
-Walks you through installing VS Code, Python, and `uFBT` on a Windows machine.
+1.  **[Setup and Create Guide](guide/setup_and_create_guide.md)** 💻  
+Walks you through installing VS Code, Python, and `uFBT` on a Windows machine, and creating a new application.
 
 2.  **[Hello World Guide](guide/flipper_hello_world_guide.md)** 👋  
 Shows you how to generate and build the default "Hello World" application provided by `uFBT`, which prints log messages.

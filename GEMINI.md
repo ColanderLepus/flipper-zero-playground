@@ -12,7 +12,7 @@ This repository serves two main functions:
 
 This directory contains all the documentation. The guides are designed to be followed in order.
 
--   `environment_setup_guide.md`: Covers the setup of the development environment (Python, uFBT, VS Code).
+-   `setup_and_create_guide.md`: Covers the setup of the development environment (VS Code, Python, uFBT) and how to create a new application.
 -   `flipper_hello_world_guide.md`: Details the creation of the `hello-flipper` application.
 -   `hello_flipper_ui_tutorial.md`: Details the creation of the `hello-flipper-ui` application.
 -   `deployment_guide.md`: Explains how to deploy applications to the Flipper Zero.
