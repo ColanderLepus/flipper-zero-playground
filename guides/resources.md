@@ -16,3 +16,28 @@ This file contains a curated list of primary resources for Flipper Zero applicat
 
 - **Link:** [https://github.com/flipperdevices/flipperzero-ufbt](https://github.com/flipperdevices/flipperzero-ufbt)
 - **Description:** The official repository for the `uFBT` tool. This is the primary tool for building, deploying, and debugging Flipper Zero applications. The repository's README provides comprehensive instructions on installation, usage, and VS Code integration.
+
+## LED Control
+
+- **Basic Blinking Example:**
+  A simple code snippet demonstrating how to blink an LED using `furi_hal_light_set` and `furi_delay_ms`.
+
+  ```c
+  #include <furi.h>
+  #include <furi_hal_light.h>
+
+  // Example function to blink the red LED
+  void blink_red_led_simple() {
+      // Turn the red LED on to full brightness
+      furi_hal_light_set(LightRed, 255);
+      furi_delay_ms(500); // Wait 500ms
+
+      // Turn the red LED off
+      furi_hal_light_set(LightRed, 0);
+      furi_delay_ms(500); // Wait 500ms
+  }
+  ```
+
+- **Advanced LED Control (Cupprum/Blinker):**
+  - **Link:** [https://github.com/Cupprum/Blinker](https://github.com/Cupprum/Blinker)
+  - **Description:** A comprehensive example demonstrating various LED control techniques, including hardware-controlled blinking and more advanced patterns. This repository can serve as a reference for complex LED implementations.
