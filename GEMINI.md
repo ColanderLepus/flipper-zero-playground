@@ -1,32 +1,37 @@
-## Project Overview
+# Project: Flipper Zero Playground
 
-This directory serves as a knowledge base *about* Flipper Zero application development. It contains four primary guides:
+## 1. Core Purpose
 
-1.  `environment_setup_guide.md`: Covers the setup of the development environment, including the installation of prerequisites like Python, uFBT, and Visual Studio Code.
-2.  `flipper_hello_world_guide.md`: Details the creation of a basic "Hello World" application that prints to the device's log.
-3.  `hello_flipper_ui_tutorial.md`: Provides an in-depth, step-by-step guide on creating a Flipper Zero UI application (`hello_flipper_ui`) that displays text directly on the device's screen using a `ViewPort`.
-4.  `deployment_guide.md`: Explains how to deploy a Flipper Zero application to the device.
+This repository serves two main functions:
+- **Application Showcase:** It hosts a collection of Flipper Zero applications, starting from basic examples and intended to grow in complexity.
+- **Educational Resource:** It provides a set of step-by-step guides that teach beginners how to build the applications contained in this repository from scratch.
 
-No actual Flipper Zero application development takes place directly within this directory; it functions as a repository for instructional context.
+## 2. Key Components
 
-## Primary Resources
+### 2.1. Instructional Guides (`guide/`)
 
-This project also includes a `resources.md` file that contains a list of primary resources for Flipper Zero development. These resources should be the first point of reference for any research. The resources include:
+This directory contains all the documentation. The guides are designed to be followed in order.
 
--   **User Interface:** A guide to the Flipper Zero's UI components.
--   **Message Queue:** A tutorial on using message queues for event-driven programming.
--   **uFBT:** The official documentation for the micro Flipper Build Tool.
+-   `environment_setup_guide.md`: Covers the setup of the development environment (Python, uFBT, VS Code).
+-   `flipper_hello_world_guide.md`: Details the creation of the `hello-flipper` application.
+-   `hello_flipper_ui_tutorial.md`: Details the creation of the `hello-flipper-ui` application.
+-   `deployment_guide.md`: Explains how to deploy applications to the Flipper Zero.
+-   `resources.md`: A curated list of essential links for Flipper Zero development.
 
+### 2.2. Example Applications
 
-## Building and Running
+These are the Flipper Zero applications that the guides teach you how to build.
 
-The guides outline the key commands for setting up the development environment, building, and deploying Flipper Zero applications using `uFBT`.
+-   `hello-flipper/`: A minimal application that prints "Hello world" to the Flipper Zero's log.
+-   `hello-flipper-ui/`: A simple UI application that displays "Hello, Flipper!" on the device screen using a `ViewPort`.
 
-*   **`ufbt create APPID=<app_id>`**: Generates a new Flipper Zero application template within the current directory (e.g., `hello_flipper_ui`).
-*   **`ufbt`**: Builds the Flipper Zero application, creating a `.fap` file in the `dist` folder.
-*   **`ufbt launch`**: Deploys and runs the built application on a connected Flipper Zero device.
-*   **`ufbt vscode_dist`**: Sets up VS Code integration for enhanced building and debugging capabilities.
+### 2.3. Project Planning
 
-## Development Conventions
+-   `IDEAS.md`: A document that tracks ideas for future applications and guides.
 
-This project encourages the use of Visual Studio Code for development due to its robust integration with `uFBT`. The primary language for Flipper Zero applications is C. For simple UI applications, the `ViewPort`-only approach is demonstrated, directly managing display and input without the need for `View` or `ViewDispatcher` abstractions. The `uFBT` tool automates the build process, ensuring consistency and ease of deployment.
+## 3. Development Workflow & Conventions
+
+-   **Toolchain:** Development relies on the `uFBT` (micro Flipper Build Tool) for creating, building, and deploying applications.
+-   **Language:** All applications are written in C.
+-   **Editor:** Visual Studio Code is the recommended editor due to its strong integration with `uFBT`.
+-   **UI Approach:** The initial guides focus on a simple, direct `ViewPort`-only approach for UI, without more complex abstractions like `ViewDispatcher`.
