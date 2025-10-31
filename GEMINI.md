@@ -8,7 +8,7 @@ This repository serves two main functions:
 
 ## 2. Key Components
 
-### 2.1. Instructional Guides (`guide/`)
+### 2.1. Instructional Guides (`guides/`)
 
 This directory contains all the documentation. The guides are designed to be followed in order.
 
@@ -22,8 +22,8 @@ This directory contains all the documentation. The guides are designed to be fol
 
 These are the Flipper Zero applications that the guides teach you how to build.
 
--   `hello-flipper/`: A minimal application that prints "Hello world" to the Flipper Zero's log.
--   `hello-flipper-ui/`: A simple UI application that displays "Hello, Flipper!" on the device screen using a `ViewPort`.
+-   `src/hello-flipper/`: A minimal application that prints "Hello world" to the Flipper Zero's log.
+-   `src/hello-flipper-ui/`: A simple UI application that displays "Hello, Flipper!" on the device screen using a `ViewPort`.
 
 ### 2.3. Project Planning
 
