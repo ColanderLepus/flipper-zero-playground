@@ -230,19 +230,7 @@ This will compile your application and create the `hello_flipper_ui.fap` file in
 
 ## Deploying the Application
 
-Finally, let's deploy our new UI application to your Flipper Zero.
-
-1.  **Connect Your Flipper Zero:**
-    Connect your Flipper Zero to your computer using a USB cable.
-
-2.  **Launch the Application:**
-    From your application's directory, run the `ufbt launch` command:
-
-    ```bash
-    ufbt launch
-    ```
-
-    This command will automatically transfer `hello_flipper_ui.fap` to your Flipper Zero's SD card and launch it.
+For instructions on how to deploy your application to your Flipper Zero, please see the [Deployment Guide](deployment_guide.md).
 
 ## Expected Output
 

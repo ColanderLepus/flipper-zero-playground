@@ -1,9 +1,10 @@
 ## Project Overview
 
-This directory serves as a knowledge base *about* Flipper Zero application development. It contains two primary guides:
+This directory serves as a knowledge base *about* Flipper Zero application development. It contains three primary guides:
 
 1.  `flipper_hello_world_guide.md`: Details the general setup of the Flipper Zero development environment and the creation of a basic "Hello World" application that prints to the device's log.
 2.  `hello_flipper_ui_tutorial.md`: Provides an in-depth, step-by-step guide on creating a Flipper Zero UI application (`hello_flipper_ui`) that displays text directly on the device's screen using a `ViewPort`.
+3.  `deployment_guide.md`: Explains how to deploy a Flipper Zero application to the device.
 
 No actual Flipper Zero application development takes place directly within this directory; it functions as a repository for instructional context.
 
