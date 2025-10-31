@@ -1,29 +1,31 @@
-### Prerequisites
+# Setting Up Your Development Environment
 
-Before you begin, you need to install the following software on your Windows computer:
+To develop applications for the Flipper Zero, you need to install and configure a few tools. This guide will walk you through setting up everything you need on a Windows computer.
 
-*   **Python:** Python is required for `uFBT`. You have two main options for installation:
-    *   **Option 1: Using the Official Installer (Recommended for beginners)**
-        Download and install Python from the [official website](https://www.python.org/). During installation, make sure to check the box that says "Add Python to PATH" or "Install launcher for all users (recommended)". This is crucial for `ufbt` to work correctly. After installation, open a Command Prompt and verify Python is installed by typing `python --version` or `py --version`. You should see the installed Python version.
-    *   **Option 2: Using Winget (Windows Package Manager)**
-        If you have Winget installed (it comes pre-installed with modern Windows versions), you can install Python by opening a Command Prompt or PowerShell and running:
-        ```bash
-        winget install Python.Python.3.10 # Or your preferred version
-        ```
-        **Note on PATH:** While `winget` installations often handle PATH configuration automatically, it's always a good practice to verify. After installation, open a *new* Command Prompt or PowerShell window and type `python --version` or `py --version`. If the command is not recognized, you may need to manually add Python to your system's PATH environment variables. You can find guides online for "how to add Python to PATH Windows".
+### 1. Visual Studio Code
 
-**A Note on the `Scripts` Folder and PATH:**
+VS Code is the recommended code editor for Flipper Zero development. It provides a great editing experience and has an integrated terminal that we will use for all subsequent commands.
 
-When you use `pip` to install packages, any command-line tools they include (like `ufbt.exe`) are placed in a `Scripts` folder inside your Python installation directory. For you to be able to type `ufbt` directly in your terminal instead of `py -m ufbt`, this `Scripts` folder must be included in your system's `PATH` environment variable. The standard Python installer has an option to do this for you, but it's a good thing to double-check if you run into issues.
-*   **Visual Studio Code:** This guide uses Visual Studio Code as the primary code editor. Download it from the [official website](https://code.visualstudio.com/). All commands should be run from the integrated terminal in VS Code.
+*   **Download and install it from the [official website](https://code.visualstudio.com/).**
 
-### Step 1: Set Up the Development Environment
+### 2. Python
 
-1.  **Install uFBT:**
-    Open a Command Prompt or PowerShell (or the integrated terminal in VS Code) and run the following command to install uFBT using pip, the Python package manager:
+Python is required to run the `uFBT` build tool.
 
+*   **Install Python:** The recommended method is to use the official installer from the [python.org website](https://www.python.org/).
+*   **IMPORTANT:** During installation, make sure to check the box that says **"Add Python to PATH"**. This is crucial for the `uFBT` tool to work correctly in the next step.
+*   **Verify the installation:** After installation, open a *new* Command Prompt or PowerShell window and type `py --version`. You should see the installed Python version.
+
+### 3. uFBT (micro Flipper Build Tool)
+
+`uFBT` is the command-line tool used to create, build, and deploy your Flipper Zero applications.
+
+*   **Install uFBT:** Once Python is installed, open a Command Prompt or PowerShell and run the following command:
     ```bash
-    py -m pip install --upgrade ufbt
+    pip install --upgrade ufbt
     ```
+*   **How it Works:** The `pip` command installs the `ufbt.exe` executable inside Python's `Scripts` folder. For your terminal to find and run `ufbt` simply by typing its name, that specific `Scripts` folder must be listed in your system's `PATH` environment variable.
 
-    uFBT is a tool that automates the process of building and deploying Flipper Zero applications.
+    The "Add Python to PATH" option in the official installer usually handles this for you by adding both directories. However, if you install `ufbt` and get a "command not found" error, it's almost certainly because the `Scripts` folder is not in your `PATH`, and you will need to add it manually.
+
+Once you have completed these steps, your environment is ready.
