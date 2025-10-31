@@ -2,6 +2,11 @@
 
 This file contains a curated list of primary resources for Flipper Zero application development. These should be consulted first when researching related topics.
 
+## Official Documentation
+
+- **Link:** [https://developer.flipper.net/flipperzero/doxygen/index.html](https://developer.flipper.net/flipperzero/doxygen/index.html)
+- **Description:** The official Doxygen documentation for the Flipper Zero firmware. This is the most comprehensive and authoritative source for API references, data structures, and detailed technical information.
+
 ## uFBT (micro Flipper Build Tool)
 
 - **Link:** [https://github.com/flipperdevices/flipperzero-ufbt](https://github.com/flipperdevices/flipperzero-ufbt)
@@ -41,3 +46,8 @@ This file contains a curated list of primary resources for Flipper Zero applicat
 - **Advanced LED Control (Cupprum/Blinker):**
   - **Link:** [https://github.com/Cupprum/Blinker](https://github.com/Cupprum/Blinker)
   - **Description:** A comprehensive example demonstrating various LED control techniques, including hardware-controlled blinking and more advanced patterns. This repository can serve as a reference for complex LED implementations.
+
+## JavaScript Development
+
+- **Link:** [https://developer.flipper.net/flipperzero/doxygen/js.html](https://developer.flipper.net/flipperzero/doxygen/js.html)
+- **Description:** The main documentation page for JavaScript application development on the Flipper Zero. It covers the basics, API, and provides examples.

@@ -24,6 +24,11 @@ This file contains a list of ideas for future applications and guides to add to 
     *   **Key Concepts:** State management (storing the counter value), passing data between views, and handling multiple input types.
     *   **Research:** Combine knowledge from the multi-view and button input projects.
 
+*   **JavaScript Application:**
+    *   **Goal:** Create a simple application using JavaScript to demonstrate its capabilities on the Flipper Zero.
+    *   **Key Concepts:** JavaScript Flipper Zero API, `fbt` for JavaScript applications.
+    *   **Research:** Refer to the 'JavaScript Development' section in `guides/resources.md`.
+
 ## Bucket of Unstructured Thoughts
 
 A place to park ideas before they are fully fleshed out.
