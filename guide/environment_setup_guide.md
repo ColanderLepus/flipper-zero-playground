@@ -13,7 +13,7 @@ VS Code is the recommended code editor for Flipper Zero development. It provides
 Python is required to run the `uFBT` build tool.
 
 *   **Install Python:** The recommended method is to use the official installer from the [python.org website](https://www.python.org/).
-*   **IMPORTANT:** During installation, make sure to check the box that says **"Add Python to PATH"**. This is crucial for the `uFBT` tool to work correctly in the next step.
+*   **Configure PATH during Installation:** When using the official installer, make sure to check the box that says **"Add `python.exe` to PATH"**. This is the most convenient way to set up your environment. It configures your system to recognize the `python` command and, just as importantly, automatically adds the `Scripts` folder to your `PATH`. This second part is what allows you to run tools like `ufbt` directly from your terminal after you install them.
 *   **Verify the installation:** After installation, open a *new* Command Prompt or PowerShell window and type `py --version`. You should see the installed Python version.
 
 ### 3. uFBT (micro Flipper Build Tool)
