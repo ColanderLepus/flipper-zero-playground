@@ -26,3 +26,8 @@ Covers the different ways to get your application onto your Flipper Zero.
 
 *   **[Primary Resources](guide/resources.md)** 🔗  
 A list of essential, official, and community resources that are highly recommended for further learning.
+
+## 💡 Future Ideas
+
+*   **[Project Ideas](IDEAS.md)** 🧠  
+A list of potential applications and guides to be developed in the future.
