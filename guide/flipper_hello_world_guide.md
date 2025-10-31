@@ -6,7 +6,6 @@ This guide will walk you through creating your very own "Hello World" applicatio
 
 Before you begin, you need to install the following software on your Windows computer:
 
-*   **Git:** Download and install Git from the [official website](https://git-scm.com/).
 *   **Python:** Python is required for `uFBT`. You have two main options for installation:
     *   **Option 1: Using the Official Installer (Recommended for beginners)**
         Download and install Python from the [official website](https://www.python.org/). During installation, make sure to check the box that says "Add Python to PATH" or "Install launcher for all users (recommended)". This is crucial for `ufbt` to work correctly. After installation, open a Command Prompt and verify Python is installed by typing `python --version` or `py --version`. You should see the installed Python version.
