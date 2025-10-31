@@ -1,6 +1,6 @@
 ### Introduction
 
-This guide will walk you through creating your very own "Hello World" application for the Flipper Zero. We will use the micro Flipper Build Tool (uFBT) to generate a new project and simplify the development process.
+This guide will walk you through creating your very own "Hello World" application for the Flipper Zero. We will use the micro Flipper Build Tool (uFBT) to generate a new project and simplify the development process. This guide assumes you will be using Visual Studio Code and its integrated terminal for a streamlined workflow.
 
 ### Prerequisites
 
@@ -15,7 +15,11 @@ Before you begin, you need to install the following software on your Windows com
         winget install Python.Python.3.10 # Or your preferred version
         ```
         **Note on PATH:** While `winget` installations often handle PATH configuration automatically, it's always a good practice to verify. After installation, open a *new* Command Prompt or PowerShell window and type `python --version` or `py --version`. If the command is not recognized, you may need to manually add Python to your system's PATH environment variables. You can find guides online for "how to add Python to PATH Windows".
-*   **Visual Studio Code:** A recommended code editor with good support for Flipper Zero development. Download it from the [official website](https://code.visualstudio.com/).
+
+**A Note on the `Scripts` Folder and PATH:**
+
+When you use `pip` to install packages, any command-line tools they include (like `ufbt.exe`) are placed in a `Scripts` folder inside your Python installation directory. For you to be able to type `ufbt` directly in your terminal instead of `py -m ufbt`, this `Scripts` folder must be included in your system's `PATH` environment variable. The standard Python installer has an option to do this for you, but it's a good thing to double-check if you run into issues.
+*   **Visual Studio Code:** This guide uses Visual Studio Code as the primary code editor. Download it from the [official website](https://code.visualstudio.com/). All commands should be run from the integrated terminal in VS Code.
 
 ### Step 1: Set Up the Development Environment
 
@@ -30,8 +34,11 @@ Before you begin, you need to install the following software on your Windows com
 
 ### Step 2: Create Your "Hello World" Application
 
-1.  **Generate a New Application:**
-    Navigate to the directory where you want your Flipper Zero application files to reside (e.g., `C:\FlipperProjects\my_hello_world_app`). You can do this in your regular Command Prompt/PowerShell or directly within the integrated terminal of VS Code (after opening the parent folder). Then, use `ufbt create` to generate a new application template. Replace `<app_id>` with a unique identifier for your application, for example, `hello_flipper`.
+1.  **Open Your Project Folder in VS Code:**
+    Create a new folder for your project (e.g., `C:\FlipperProjects\my_hello_world_app`) and open it in Visual Studio Code (`File > Open Folder...`).
+
+2.  **Generate a New Application:**
+    Open the integrated terminal in VS Code (`View > Terminal`). You should already be in your project's root directory. Use `ufbt create` to generate a new application template. Replace `<app_id>` with a unique identifier for your application, for example, `hello_flipper`.
 
     ```bash
     ufbt create APPID=hello_flipper
@@ -39,19 +46,19 @@ Before you begin, you need to install the following software on your Windows com
 
     This command will create the application manifest (`application.fam`) and its main source file (`hello_flipper.c`) directly within your current directory. **Note:** The generated `hello_flipper.c` file already contains a basic "Hello World" implementation using `FURI_LOG_I` to print messages to the Flipper Zero's internal log.
 
-2.  **Set up VSCode Integration (Optional but Recommended):**
-    For a better development experience, you can integrate your project with Visual Studio Code. Run the following command from your application's root directory (the directory where you ran `ufbt create`) in your terminal (or the integrated terminal in VS Code):
+3.  **Set up VSCode Integration:**
+    For a better development experience, you can integrate your project with Visual Studio Code. Run the following command from your application's root directory in the integrated terminal:
 
     ```bash
     ufbt vscode_dist
     ```
 
-    This command will generate VSCode configuration files that allow you to build and debug your application directly from the IDE. After running this, open VSCode, go to `File > Open Folder...`, and select your application's directory (e.g., `C:\FlipperProjects\my_hello_world_app`). You can then use the provided launch (Ctrl+Shift+B) and debugging (Ctrl+Shift+D) configurations.
+    This command will generate VSCode configuration files that allow you to build and debug your application directly from the IDE. You can then use the provided launch (Ctrl+Shift+B) and debugging (Ctrl+Shift+D) configurations.
 
 ### Step 3: Build the Application
 
 1.  **Build with uFBT:**
-    From within your application's directory (the directory where you ran `ufbt create`), run the following command in your terminal (or the integrated terminal in VS Code) to build your application:
+    From within your application's directory, run the following command in the integrated terminal in VS Code to build your application:
 
     ```bash
     ufbt
@@ -69,7 +76,7 @@ There are two ways to deploy the application to your Flipper Zero:
     Connect your Flipper Zero to your computer using a USB cable.
 
 2.  **Launch the Application:**
-    From within your application's directory (the directory where you ran `ufbt create`), run the following command in your terminal (or the integrated terminal in VS Code):
+    From within your application's directory, run the following command in the integrated terminal in VS Code:
 
     ```bash
     ufbt launch
