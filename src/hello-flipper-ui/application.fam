@@ -1,8 +1,8 @@
 # For details & more options, see documentation/AppManifests.md in firmware repo
 
 App(
-    appid="hello_flipper_ui",  # Must be unique
-    name="App hello_flipper_ui",  # Displayed in menus
+    appid="hello_flipper_ui", # Must be unique
+    name="Hello Flipper UI",  # Displayed in menus
     apptype=FlipperAppType.EXTERNAL,
     entry_point="hello_flipper_ui_app",
     stack_size=2 * 1024,
