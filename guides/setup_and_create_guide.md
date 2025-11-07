@@ -54,3 +54,12 @@ Once your environment is set up, you can create a new Flipper Zero application.
     ```
 
     This command will generate VSCode configuration files that allow you to build and debug your application directly from the IDE. You can then use the provided launch (Ctrl+Shift+B) and debugging (Ctrl+Shift+D) configurations.
+
+### Understanding the Generated Files
+
+The `ufbt create` command generates two key files:
+
+*   **`application.fam`**: The application manifest, which contains metadata about your app.
+*   **`<app_id>.c`**: The main source file.
+
+The generated `.c` file contains a simple "Hello World" implementation that prints a message to the Flipper Zero's log using `FURI_LOG_I`. You can view this log output by running your application with `ufbt launch --log` or through the qFlipper desktop application.

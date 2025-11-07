@@ -2,7 +2,7 @@
 
 This guide will walk you through building and deploying the default "Hello World" application for the Flipper Zero.
 
-### Setup and Creation
+### Prerequisites
 
 Before you begin, please follow the [Setup and Create Guide](setup_and_create_guide.md) to:
 1.  Set up your development environment.
@@ -10,12 +10,7 @@ Before you begin, please follow the [Setup and Create Guide](setup_and_create_gu
 
 After following the guide, you will have a folder containing a pre-made "Hello World" application.
 
-### Understanding the Code
-
-The `ufbt create` command generates a file named `hello_flipper.c` that already contains a basic "Hello World" implementation. It uses `FURI_LOG_I` to print messages to the Flipper Zero's internal log, which you can view using `ufbt launch` with the `--log` flag or in the qFlipper application.
-
-
-### Step 3: Build the Application
+### Step 1: Build the Application
 
 1.  **Build with uFBT:**
     From within your application's directory, run the following command in the integrated terminal in VS Code to build your application:
@@ -26,7 +21,7 @@ The `ufbt create` command generates a file named `hello_flipper.c` that already 
 
     A successful build will show various compilation messages and will ultimately create a `.fap` file (Flipper Application Package) in the `dist` folder within your application's directory (e.g., `C:\FlipperProjects\my_hello_world_app\dist\hello_flipper.fap`).
 
-### Step 4: Deploy the Application
+### Step 2: Deploy the Application
 
 For instructions on how to deploy your application to your Flipper Zero, please see the [Deployment Guide](deployment_guide.md).
 
