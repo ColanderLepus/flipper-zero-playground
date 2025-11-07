@@ -6,12 +6,12 @@ App(
     apptype=FlipperAppType.EXTERNAL,
     entry_point="hello_flipper_ui_app",
     stack_size=2 * 1024,
-    fap_category="Examples",
+    fap_category="Media",
     # Optional values
     # fap_version="0.1",
     fap_icon="hello_flipper_ui.png",  # 10x10 1-bit PNG
-    # fap_description="A simple app",
-    # fap_author="J. Doe",
+    # fap_description="Displays a message on the screen.",
+    # fap_author="Colander Lepus",
     # fap_weburl="https://github.com/user/hello_flipper_ui",
     fap_icon_assets="images",  # Image assets to compile for this application
 )
